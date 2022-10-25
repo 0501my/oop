@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Moblie = function (battery, memoryArea1, memoryArea2, memoryArea3) {
+        this.battery = battery;
+        this.memoryArea1 = memoryArea1;
+        this.memoryArea2 = memoryArea2;
+        this.memoryArea3 = memoryArea3;
+
+        this.checkStatusOnOff = function () {
+
+        if (this.battery > 0) {
+        return true;
+    } else {
+        return false;
+    }
+    };
+
+        this.turnOn = function () {
+        alert("Đang bật Điện thoại ");
+    };
+
+        this.turnOf = function () {
+        alert("Đang tắt điện thoại");
+    };
+
+        this.charge = function () {
+        alert("đang sạc Pin " + this.battery++ + "%");
+    };
+
+        this.writeMessenger = function () {
+        prompt("hãy viết tin nhắn");
+    };
+
+        this.massengerL = function () {
+        alert("massenger đã gửi");
+
+    };
+        this.afterUse = function () {
+        alert(" Đã khởi tạo chức năng : " + this.memoryArea1 + "%");
+    }
+
+    };
+        let mobile = new Moblie( 80, 100, 100, 100);
+
+        function main() {
+        mobile.turnOf();
+    }
+
+        function main1() {
+        mobile.turnOn();
+    }
+
+        function main2() {
+        mobile.charge();
+    }
+
+        function main3() {
+        mobile.writeMessenger();
+    }
+
+        function main4() {
+        mobile.massengerL();
+    }
+
+        function main5() {
+        mobile.afterUse();
+
+    }
+</script>
+<font style="margin-left: 280px; color: #1c21e7;"> Iphone 14 Pro Max </font>
+<table border="1">
+
+    <th>
+        <button type="button" onClick="main()" style=" cursor: pointer;
+    background-color: #1e1d1c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;"> Tắt Điện thoại
+        </button>
+    </th>
+
+    <th>
+        <button type="button" onClick="main1()" style="cursor: pointer;
+    background-color: #11ff00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;"> Bật Điện thọai
+        </button>
+    </th>
+
+    <th>
+        <button type="button" onClick="main2()" style="cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;"> Sạc Pin
+        </button>
+    </th>
+
+    <th>
+        <button type="button" onClick="main3()" style="cursor: pointer;
+    background-color: #af984c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;"> VIẾT TIN NHẮN
+        </button>
+    </th>
+
+    <th>
+        <button type="button" onClick="main4()" style="cursor: pointer;
+    background-color: #ffdd00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;"> SEND
+        </button>
+    </th>
+
+    <th>
+        <button type="button" onClick="main5()" style="cursor: pointer;
+    background-color: #af984c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;"> SỬ DỤNG CHỨC NĂNG
+        </button>
+    </th>
+
+</table>
+
+</body>
+</html>

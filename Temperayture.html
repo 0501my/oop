@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        doC;
+        constructor(doC) {
+            this.doC = doC;
+        }
+        doF(){
+            return this.doC * 9/5+32
+        }
+        doK(){
+            return this.doC+273.15
+        }
+    }
+    let temperature = new Temperature(25);
+    let dof = temperature.doF();
+    let dok = temperature.doK();
+    document.write(" Nhiệt độ K là : " + dok + "<br/>"
+                    + "Nhiệt độ F là : " + dof )
+
+
+</script>
+
+</body>
+</html>
